@@ -37,14 +37,3 @@ Pruebas automáticas: `python manage.py test citas`
 2. **Primera solicitud con caché:** reinicia el servidor, envía el GET → `X-Cache: MISS`. Anota su tiempo aparte.
 3. **Cinco solicitudes siguientes:** misma URL → `X-Cache: HIT`. Registra los 5 tiempos.
 4. **Actualización:** edita una cita (Admin o `/citas/<id>/editar/`), repite el GET → `X-Cache: MISS` y el JSON muestra el cambio; la siguiente vuelve a ser `HIT`.
-
-## Tabla de tiempos (ms) — completar con tus mediciones de Postman
-| Condición | Prueba 1 | Prueba 2 | Prueba 3 | Prueba 4 | Prueba 5 | Promedio |
-|---|---|---|---|---|---|---|
-| Sin caché | | | | | | |
-| Con caché | | | | | | |
-
-Primera solicitud que llenó el caché: ___ ms
-
-## Conclusión
-(Redáctala con tus números: diferencia de promedios y la evidencia: encabezado `X-Cache`, log de consola y el cambio reflejado tras editar un registro.)
